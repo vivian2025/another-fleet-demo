@@ -7,9 +7,9 @@ helm:
   values:
     grafana:
       additionalDataSources:
-        - name: "loki"
-          type: "loki"
-          url: "http://loki.loki.svc:3100"
+        - name: "vivian"
+          type: "vivian"
+          url: "sslip.io"
     prometheusOperator:
       prometheusSpec:
         resources:
