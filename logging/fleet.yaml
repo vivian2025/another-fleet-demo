@@ -5,17 +5,6 @@ helm:
   chart: rancher-logging
   releaseName: rancher-logging
   version: 3.9.400
-  ingress:
-      hosts:
-        - host: sslip.io
-          paths:
-            - path: /
-              pathType: ImplementationSpecific
-    autoscaling:
-      enabled: true
-      minReplicas: 4
-      maxReplicas: 25
-      targetCPUUtilizationPercentage: 80
 diff:
   comparePatches:
   - apiVersion: logging.banzaicloud.io/v1beta1
